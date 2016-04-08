@@ -1,4 +1,3 @@
 git add -A
-git commit -m "update gems for heroku"
-git push -u origin master
-git push heroku master
+git commit -m "added nokogiri gem and rb file"
+git push -u origin noko
