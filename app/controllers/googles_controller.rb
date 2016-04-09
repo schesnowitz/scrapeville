@@ -1,5 +1,6 @@
 class GooglesController < ApplicationController
   before_action :set_google, only: [:show, :edit, :update, :destroy]
+  before_action :scrape, only: [:new]
 
   # GET /googles
   # GET /googles.json
@@ -14,7 +15,11 @@ class GooglesController < ApplicationController
 
   # GET /googles/new
   def new
-    @google = Google.new
+    @google = Google.new(
+      title: @google_data.title,
+      body: @google_data.body,
+      time: @google_data.time
+      )
   end
 
   # GET /googles/1/edit
@@ -70,5 +75,11 @@ class GooglesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def google_params
       params.require(:google).permit(:title, :body, :time)
+    end
+    
+    def scrape
+      s = Google.new
+      s.scrape_google_news(params[:search].to_s)
+      @google_data = s
     end
 end
