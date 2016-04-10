@@ -1,5 +1,5 @@
 git add -A
-git commit -m "added google model and controller"
+git commit -m "safe"
 git push origin master
 git push heroku master
 
