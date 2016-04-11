@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
   
-  resources :googles
   root to: 'pages#index'
+  # root to: 'application#google_news'
+
 
 end
