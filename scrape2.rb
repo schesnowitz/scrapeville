@@ -4,7 +4,7 @@ require 'open-uri'
 # Fetch and parse HTML document
 page = Nokogiri::HTML(open('https://news.google.com/news/'))
 
-page.css('.esc-layout-article-cell').each do |story|
+page.css('.esc-body').each do |story|
   
   title = story.at_css('.titletext').text 
   body = story.at_css('.esc-lead-snippet-wrapper').text

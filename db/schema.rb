@@ -11,6 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160410201602) do
+ActiveRecord::Schema.define(version: 20160412071407) do
+
+  create_table "googles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "time"
+    t.string   "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "newsvilles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "time"
+    t.string   "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
