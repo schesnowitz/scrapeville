@@ -1,5 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class='pull-left padding'>
+  <% if @newsville.image_url.present? %>
+  <td><%= image_tag @newsville.image_url, class: "img-rounded" %></td>
+  <% else %>
+  <td><%= image_tag 'nia.jpg', class: "img-rounded" %></td>
+  <% end %>
+</div> 
+
 <p>
   <strong>View:</strong>
   <%= link_to "Original Story", @newsville.title_url, :target => "_blank" %>
@@ -20,15 +29,7 @@
   <%= time_ago_in_words(@newsville.created_at) %> ago 
 </p>
 
-<p>
-  <strong>Story Image</strong><br />
-        <% if @newsville.image_url.present? %>
-        <td><%= image_tag @newsville.image_url %></td>
-        <% else %>
-        <td><%= image_tag 'nia.jpg' %></td>
-        <% end %>
 
-</p>
 
 
 <%= link_to 'Back to Newsvilles', newsvilles_path, class: 'btn btn-info btn-xs' %>
