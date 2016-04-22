@@ -9,7 +9,7 @@ image = .esc-thumbnail-image
 
 
 
-https://scrapeville-chesnowitz.c9users.io/newsvilles/2/edit
+heroku config:add GMAIL_USERNAME=railsessentials@gmail.com @gmail.com GMAIL_PASSWORD=essentials
 
 
 
