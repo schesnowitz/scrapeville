@@ -1,5 +1,5 @@
 git add -A
-git commit -m "added index bootstrap and functions"
+git commit -m "completed set up of cancancan"
 git push origin master
 git push heroku master
 
