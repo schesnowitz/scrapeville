@@ -8,18 +8,3 @@ image = .esc-thumbnail-image
 
 
 
-
-heroku config:add GMAIL_USERNAME=railsessentials@gmail.com @gmail.com GMAIL_PASSWORD=essentials
-
-S3_BUCKET_NAME: roressentials
-AWS_ACCESS_KEY_ID: AKIAJHKHE27BDHGVNFFA
-AWS_SECRET_ACCESS_KEY: 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
-
-
-
-Access Key ID:
-AKIAI7SPQ5ZSBUTTHUAA
-Secret Access Key:
-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
-
-heroku config:set S3_BUCKET_NAME=scrapeville
