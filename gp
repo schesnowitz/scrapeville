@@ -1,6 +1,9 @@
 git add -A
-git commit -m "title_url validation"
+git commit -m "added validation to newsville and schedule on heroku"
 git push origin master
 git push heroku master
+
+
+
 
 
