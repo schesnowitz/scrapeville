@@ -1,5 +1,5 @@
 git add -A
-git commit -m "config.dependency_loading = true 2"
+git commit -m "set up auto scrape on heroku"
 git push origin master
 git push heroku master
 
