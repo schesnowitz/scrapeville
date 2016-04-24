@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Welcome to Newsville</h1> 
+<%= will_paginate @newsvilles %>
 
 <table class="table table-bordered">
   <thead>
@@ -40,6 +41,6 @@
     <% end %>
   </tbody>
 </table>
-
+<%= will_paginate @newsvilles %>
 <br>
 
