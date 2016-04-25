@@ -1,5 +1,5 @@
 git add -A
-git commit -m "added pagination"
+git commit -m "Setting Time and Paging Nate"
 git push origin master
 git push heroku master
 

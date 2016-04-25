@@ -6,7 +6,7 @@ class NewsvillesController < ApplicationController
   # GET /newsvilles.json
   def index
 
-    @newsvilles = Newsville.paginate(page: params[:page], per_page: 10).order("created_at ASC")
+    @newsvilles = Newsville.paginate(page: params[:page], per_page: 20).order("created_at DESC")
   end
 
   # GET /newsvilles/1
